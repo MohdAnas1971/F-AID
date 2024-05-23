@@ -31,9 +31,7 @@ fun ChatHeader(navController: NavHostController) {
         IconButton(onClick = {navController.navigate("homePage")}) {
             Icon(Icons.Rounded.ArrowBack,
                 contentDescription = "Back to home")
-
         }
-
         Text(text = " F-AID Chat Bot",
             color = Blue,
             fontSize = 30.sp,
@@ -45,13 +43,10 @@ fun ChatHeader(navController: NavHostController) {
                 //.background(Color.LightGray)
                 .padding(8.dp)
         )
-
 IconButton(onClick = {}) {
     Icon(Icons.Rounded.Share,
         contentDescription ="Share app",
         )
 }
-
     }
-
 }

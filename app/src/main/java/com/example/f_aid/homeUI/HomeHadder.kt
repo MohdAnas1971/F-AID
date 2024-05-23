@@ -59,11 +59,10 @@ fun HomeHeader(context: Context) {
         }
     }
 }
-
 fun shareButtonAction(context: Context) {
     val shareIntent = Intent().apply {
         action = Intent.ACTION_SEND
-        putExtra(Intent.EXTRA_TEXT, "Check Out this Link: link")
+        putExtra(Intent.EXTRA_TEXT, "Check Out this Link: https://github.com/MohdAnas1971/F-AID.git")
         type = "text/plain"
     }
     val chooserIntent = Intent.createChooser(shareIntent, null)

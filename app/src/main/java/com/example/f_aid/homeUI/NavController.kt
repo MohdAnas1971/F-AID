@@ -15,6 +15,8 @@ import com.example.f_aid.scanner.cameraApp
 @Preview(showSystemUi = true, showBackground = true)
 @Composable
 fun NavController() {
+
+
     val navController = rememberNavController()
 
     var recognizedText = remember {

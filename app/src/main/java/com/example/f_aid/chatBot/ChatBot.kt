@@ -18,7 +18,7 @@ import androidx.navigation.NavHostController
 fun ChatBot(
     navController: NavHostController,
     viewModel:ViewModelCha= viewModel()
-) {
+    ) {
     val state = remember{State()}
 
     Column(
@@ -39,7 +39,7 @@ fun ChatBot(
 
 
             if ( viewModel.list.isEmpty()){
-                ChatSuggestion( navController,state)
+                ChatSuggestion(state)
             }else{
                 ChatList(list = viewModel.list)
             }

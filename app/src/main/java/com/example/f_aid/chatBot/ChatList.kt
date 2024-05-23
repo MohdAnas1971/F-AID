@@ -29,7 +29,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.navigation.NavHostController
 import com.example.f_aid.R
 import com.example.f_aid.ui.theme.Black
 import com.example.f_aid.ui.theme.Blue
@@ -103,7 +102,7 @@ fun ChatList(
 
 
 @Composable
-fun ChatSuggestion(navController: NavHostController,state: State) {
+fun ChatSuggestion(state: State) {
 
 
         Column(modifier= Modifier
@@ -111,7 +110,6 @@ fun ChatSuggestion(navController: NavHostController,state: State) {
             .padding(bottom = 70.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center) {
-
 
 
             Column(modifier = Modifier.fillMaxWidth(),

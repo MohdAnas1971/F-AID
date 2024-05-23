@@ -5,4 +5,5 @@ import androidx.compose.runtime.mutableStateOf
 
 class State {
     var inputText: MutableState<String> = mutableStateOf("")
+
 }
