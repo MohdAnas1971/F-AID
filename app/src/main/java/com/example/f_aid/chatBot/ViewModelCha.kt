@@ -27,7 +27,7 @@ class ViewModelCha : ViewModel() {
         val chat =genAI.startChat()
         list.add(ChatData(message,ChatRoleEnum.USER.role))
 
-       val content= chat.sendMessage(content(ChatRoleEnum.USER.role) { text(message) }).text?.let {
+       chat.sendMessage(content(ChatRoleEnum.USER.role) { text(message) }).text?.let {
             list.add(ChatData(it,ChatRoleEnum.MODEL.role))
         }
         val response: String? = genAI.startChat().sendMessage(prompt = message).text
