@@ -46,10 +46,8 @@ fun ChatBot(
            
         }
         ChatFooter(state) {
-
             if (it.isNotEmpty()){
-
-viewModel.sendMassageF(it)
+viewModel.sendMassageF(it,"Bot")
 
             }
         }

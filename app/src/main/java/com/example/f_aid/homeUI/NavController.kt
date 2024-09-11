@@ -7,6 +7,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.f_aid.chatBot.ChatBot
+import com.example.f_aid.otherFeature.NotificationD
+import com.example.f_aid.prediction_chat.FoodPrediction
 import com.example.f_aid.scanner.DisplayResult
 import com.example.f_aid.scanner.StateText
 import com.example.f_aid.scanner.cameraApp
@@ -30,9 +32,14 @@ fun NavController() {
 
 
         composable("homePage") {HomePage(navController) }
-        composable("CameraApp") {recognizedText=cameraApp(navController) }
+        composable("CameraApp") {recognizedText= cameraApp(navController) }
         composable("ChatBot") { ChatBot(navController) }
         composable("DisplayResult") { DisplayResult(recognizedText) }
-       // composable("TextScanner") { TextScanner(navController) }
+        composable("LoginPage"){ LoginPage()}
+        composable("ProfilePage"){ ProfilePage(navController) }
+        composable("Notification"){ NotificationD() }
+        composable("PersonalInfo"){PersonalInfo() }
+        composable("FoodPrediction"){ FoodPrediction() }
+        // composable("TextScanner") { TextScanner(navController) }
     }
 }

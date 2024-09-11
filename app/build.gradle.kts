@@ -84,10 +84,9 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.play.services.vision)
-
+    implementation(libs.androidx.foundation)  // Foundation components
    // implementation(libs.androidx.material3.android)
-   //for  Nav Controller
-    implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.navigation.compose)//for  Nav Controller
   //  implementation(project(":app"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
@@ -101,9 +100,11 @@ dependencies {
     implementation(libs.kotlin.stdlib)
     implementation(libs.kotlinx.coroutines.core)
     implementation(libs.kotlinx.coroutines.android)
-
     //for api
     implementation(libs.generativeai)
-    //for view model
+//for not delete value by app close
+    implementation (libs.androidx.datastore.preferences)
+
+
 
 }

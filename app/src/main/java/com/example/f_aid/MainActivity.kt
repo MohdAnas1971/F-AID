@@ -15,7 +15,6 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             FAIDTheme {
-
                 // A surface container using the 'background' color from the theme
                 App()
             }
@@ -31,3 +30,5 @@ fun App() {
         NavController()
     }
 }
+
+

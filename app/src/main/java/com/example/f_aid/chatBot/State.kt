@@ -7,3 +7,4 @@ class State {
     var inputText: MutableState<String> = mutableStateOf("")
 
 }
+

@@ -33,6 +33,7 @@ import com.example.f_aid.R
 import com.example.f_aid.ui.theme.Black
 import com.example.f_aid.ui.theme.Blue
 import com.example.f_aid.ui.theme.BlueDark
+import com.example.f_aid.ui.theme.GrayLL
 
 
 @Composable
@@ -148,14 +149,14 @@ fun SuggestionQuestion(question: String, state: State) {
     Box(modifier = Modifier
 
         .padding(8.dp)
-        .border(5.dp, Blue)
+        .border(2.dp, Blue)
     ){
         Text(text = question,
             color = Black,
             textAlign = TextAlign.Center,
             fontSize = 18.sp,
             modifier = Modifier
-                .background(Color.LightGray)
+                .background(GrayLL)
                 .padding(16.dp)
                 .fillMaxWidth()
                 .size(width = 200.dp, height = 30.dp)
